@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>100</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>State</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>230</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Step
+--
+action
+reverseAction
+isFailed:boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>120</x>
+      <y>130</y>
+      <w>80</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..6</panel_attributes>
+    <additional_attributes>30;30;60;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>110</y>
+      <w>150</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=succ</panel_attributes>
+    <additional_attributes>60;140;130;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>130</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=pred</panel_attributes>
+    <additional_attributes>30;100;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>530</x>
+      <y>160</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Tower</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>270</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CurrentWorld
+--
+apply(Step):boolean
+applyReverse(Step):boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>530</x>
+      <y>160</y>
+      <w>50</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=3</panel_attributes>
+    <additional_attributes>30;110;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>490</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SearchController
+--
+visitedStates</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>150</x>
+      <y>30</y>
+      <w>230</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=/current
+</panel_attributes>
+    <additional_attributes>210;460;180;30;30;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>0</y>
+      <w>340</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=*
+r2=stack
+</panel_attributes>
+    <additional_attributes>320;490;230;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>280</y>
+      <w>200</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=*
+r2=stack
+</panel_attributes>
+    <additional_attributes>180;260;60;240;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>150</x>
+      <y>280</y>
+      <w>150</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=/current
+</panel_attributes>
+    <additional_attributes>130;220;50;180;30;30</additional_attributes>
+  </element>
+</diagram>

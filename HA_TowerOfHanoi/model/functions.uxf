@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>552</x>
+      <y>504</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>*Place*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>584</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>*Tower*
+--
+pop():Ring
+push(Ring)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>568</x>
+      <y>520</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=  1</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>680</x>
+      <y>584</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>*Ring*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>608</x>
+      <y>568</y>
+      <w>88</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-&gt;
+m2= *
+</panel_attributes>
+    <additional_attributes>24;24;72;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>512</x>
+      <y>456</y>
+      <w>264</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>*domain*
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>240</x>
+      <y>264</y>
+      <w>200</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>*Controller*
+--
+setUp(noOfRings:int)
+setAlgorithm(MoveStrategyKind)
+start()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>248</x>
+      <y>424</y>
+      <w>200</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*MoveStrategy*
+--
+move(from:Place, to:Place, middle:Place)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>256</x>
+      <y>584</y>
+      <w>152</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*~ RecursiveMoveStrategy*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>328</x>
+      <y>616</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*~ BacktrackingMoveStrategy*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>456</y>
+      <w>48</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;32;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>384</x>
+      <y>528</y>
+      <w>72</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;56;88</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>168</x>
+      <y>496</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>*Responsibilities*
+- Provides the 
+Move-algorithm
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>456</y>
+      <w>56</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>40;64;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>32</x>
+      <y>256</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>*Responsibilities*
+- configures initial state
+- creates Printer-Object
+- creates chosen MoveStrategy
+- starts algorithm
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>256</y>
+      <w>72</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;32;56;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>0</x>
+      <y>392</y>
+      <w>504</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>*algo*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>32</x>
+      <y>488</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+*MoveStrategyKind*
+--
+#recursive
+#backtracking</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>16</x>
+      <y>424</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>*MoveStrategyFactory*
+--
+_create(MoveKind, Printer):MoveStrategy_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>32</x>
+      <y>600</y>
+      <w>176</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>not visible outside this package
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>520</y>
+      <w>136</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;96;120;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>600</y>
+      <w>160</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;24;144;32</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>304</x>
+      <y>304</y>
+      <w>64</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=  1</panel_attributes>
+    <additional_attributes>24;24;48;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>512</x>
+      <y>208</y>
+      <w>264</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>*ui*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>232</y>
+      <w>80</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*Printer*
+--
+printState()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>544</x>
+      <y>344</y>
+      <w>70</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=3 {ordered}</panel_attributes>
+    <additional_attributes>32;24;40;160</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>408</x>
+      <y>264</y>
+      <w>144</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=  1</panel_attributes>
+    <additional_attributes>24;264;128;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>592</x>
+      <y>400</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*ConsolePrinter*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>568</x>
+      <y>344</y>
+      <w>80</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;64;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>616</x>
+      <y>264</y>
+      <w>128</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>
+Could be hidden inside 
+the package by a factory?!
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>624</x>
+      <y>272</y>
+      <w>56</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;128;40;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>304</x>
+      <y>528</y>
+      <w>144</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*/~ AbstractMoveStrategy/*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>328</x>
+      <y>528</y>
+      <w>72</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>56;24;24;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>576</y>
+      <w>88</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;40;72;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>536</x>
+      <y>328</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>*/AbstractPrinter/*
+--
+noOfRings:int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>544</x>
+      <y>264</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>616</x>
+      <y>272</y>
+      <w>48</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;72;32;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>8</x>
+      <y>232</y>
+      <w>448</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>*controller*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

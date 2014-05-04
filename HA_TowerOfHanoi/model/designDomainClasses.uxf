@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>60</x>
+      <y>220</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>*Tower*
+--
+push(Ring)
+pop():Ring
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>440</x>
+      <y>220</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>*Ring*
+--
+size
+--
+isSmallerThan(Ring):boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>360</x>
+      <y>110</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>context Ring inv:
+self.size &gt; 0
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>270</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>130;30;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>230</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+r2={ordered}
+m2=*</panel_attributes>
+    <additional_attributes>30;30;270;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>290</x>
+      <y>320</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Size of a ring never changes.
+Thus, the attribute size should be
+immutable.
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>140</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;110;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>0</x>
+      <y>360</y>
+      <w>280</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>context Tower inv:
+{1..ring-&gt;size()}-&gt;forAll(i,j|
+i &lt; j implies ring[i].isSmallerThan(ring[j]))
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>110</x>
+      <y>270</y>
+      <w>90</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;70;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>380</x>
+      <y>420</y>
+      <w>280</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>// isSmallerThan is correctly implemented
+context r1,r2:Ring inv:
+r1.isSmallerThan(r2) = (r1.size &lt; r2.size)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>530</x>
+      <y>270</y>
+      <w>60</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>40;30;30;150</additional_attributes>
+  </element>
+</diagram>

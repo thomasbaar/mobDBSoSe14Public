@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>100</x>
+      <y>120</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>*Place*
+--
+name:String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>100</x>
+      <y>250</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>*Tower*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>120</x>
+      <y>140</y>
+      <w>50</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=  1</panel_attributes>
+    <additional_attributes>30;30;30;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>250</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>*Ring*
+--
+size:int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>230</y>
+      <w>270</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-&gt;
+m2= *
+r2={ordered}</panel_attributes>
+    <additional_attributes>30;30;250;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>30</x>
+      <y>330</y>
+      <w>300</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>*Responsibilities:*
+- Rings are always ordered by size
+-- the successor (next one) is always smaller 
+-- the last one being the smallest
+
+
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>270</y>
+      <w>70</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>50;30;30;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>330</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>- size is immutable
+- size starts from 1 and goes up to number-of-rings
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>300</y>
+      <w>50</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;30;60</additional_attributes>
+  </element>
+</diagram>
