@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>170</x>
+      <y>95</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>140</x>
+      <y>70</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>410</x>
+      <y>270</y>
+      <w>160</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>145</x>
+      <y>120</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>140</x>
+      <y>155</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>230</x>
+      <y>120</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>295</y>
+      <w>135</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*BNoteEditor*
+--
+onCreate()
+onResume()
+onPause()
+onSaveInstanceState()
+onCreateOptionsMenu()
+onPrepareOptionsMenu()
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>495</x>
+      <y>225</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*Acitivity*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>495</x>
+      <y>225</y>
+      <w>34</w>
+      <h>79</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>15;70;25;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>475</x>
+      <y>360</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*LinedEditText*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>595</x>
+      <y>290</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*EditText*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>495</x>
+      <y>290</y>
+      <w>114</w>
+      <h>79</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>15;70;105;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>235</x>
+      <y>250</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>- editor for newly created or existing 
+  items
+- has a flag to distinguish both cases  
+
+*mText*
+- type of this visual element is
+  set in layout file note_editor.xml
+*onCreate*
+- depening on edit/insert-mode extracts
+  the right cursor, initializes layout
+*onResume()*
+- sets title and EditText content
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>325</x>
+      <y>345</y>
+      <w>159</w>
+      <h>29</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;150;20</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>510</x>
+      <y>325</y>
+      <w>109</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=mText</panel_attributes>
+    <additional_attributes>45;15;100;30;15;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>240</x>
+      <y>360</y>
+      <w>110</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>Draws lines between textlines
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>360</x>
+      <y>305</y>
+      <w>69</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;60;15</additional_attributes>
+  </element>
+</diagram>

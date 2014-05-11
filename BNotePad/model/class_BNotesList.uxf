@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>155</x>
+      <y>75</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>125</x>
+      <y>45</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>265</x>
+      <y>170</y>
+      <w>175</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>130</x>
+      <y>95</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>125</x>
+      <y>130</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>215</x>
+      <y>95</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>325</x>
+      <y>195</y>
+      <w>60</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*BNotesList*
+--
+onCreate
+
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>115</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*ListActivity*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>335</x>
+      <y>115</y>
+      <w>24</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>15;80;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>460</x>
+      <y>115</y>
+      <w>75</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*ListAdapter*
+--
+areAllItemsEnabled()
+isEnabled(int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>365</x>
+      <y>105</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>475</x>
+      <y>215</y>
+      <w>90</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>*SimpleCursorAdapter*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>485</x>
+      <y>140</y>
+      <w>24</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>15;75;15;15</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>80</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>50</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>370</x>
+      <y>220</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>95</x>
+      <y>100</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>90</x>
+      <y>135</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>180</x>
+      <y>100</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>245</y>
+      <w>125</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*BNotePadActivityTest*
+--
+testActivityTestCaseSetUpProperly()
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>415</x>
+      <y>95</y>
+      <w>175</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*ActivityInstrumentationTestCase2&lt;BNotesList&gt;*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>485</x>
+      <y>110</y>
+      <w>54</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>45;135;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>380</x>
+      <y>260</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*BNotesList*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>390</x>
+      <y>110</y>
+      <w>44</w>
+      <h>159</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=activity</panel_attributes>
+    <additional_attributes>35;15;15;150</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>535</x>
+      <y>170</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>better renamed to
+BNotesListTest
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>530</x>
+      <y>190</y>
+      <w>34</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;55;25;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>280</x>
+      <y>175</y>
+      <w>80</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>tests just that activity 
+is started correctly
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>345</x>
+      <y>180</y>
+      <w>159</w>
+      <h>74</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>150;65;15;15</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>200</x>
+      <y>95</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>65</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>435</x>
+      <y>185</y>
+      <w>165</w>
+      <h>185</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>465</x>
+      <y>215</y>
+      <w>120</w>
+      <h>115</h>
+    </coordinates>
+    <panel_attributes>*BNotePad*
+--
+_AUTHORITY_
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>475</x>
+      <y>245</y>
+      <w>95</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>*BNotes*
+--
+_TABLE_NAME_
+_COLUMN_NAME_..._
+_CONTENT_URI_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>255</x>
+      <y>210</y>
+      <w>135</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>- just declares two constants to
+  be used by implementing classes
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>260</x>
+      <y>270</y>
+      <w>160</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>- central class to defines constants 
+  for authority, path, etc. to be used 
+  by content provider and DB access
+- for each concept (table) stored in 
+  the DB it has an inner class
+- nested classes are
+  implemented as final static classes  
+- main class is implemented as final class
+  with only static members, but as a toplevel
+  class, this class cannot be static  
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>165</x>
+      <y>145</y>
+      <w>119</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;110;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>405</x>
+      <y>290</y>
+      <w>69</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;30;60;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>340</x>
+      <y>150</y>
+      <w>80</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*BaseColumns*
+--
+__ID_
+__COUNT_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>180</y>
+      <w>119</w>
+      <h>74</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>110;65;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>170</x>
+      <y>115</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>300</x>
+      <y>160</y>
+      <w>49</w>
+      <h>59</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;50;40;15</additional_attributes>
+  </element>
+</diagram>

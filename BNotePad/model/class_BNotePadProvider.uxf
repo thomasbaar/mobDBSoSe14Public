@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>240</x>
+      <y>65</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>215</x>
+      <y>40</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>480</x>
+      <y>265</y>
+      <w>190</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>220</x>
+      <y>90</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>215</x>
+      <y>125</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>525</x>
+      <y>290</y>
+      <w>125</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>*BNotePadProvider*
+--
+_- DATABASE_NAME_
+_-sNotesProjectionMap_
+--
+query():Cursor
+getType()
+getStreamTypes()
+openTypedAssetFile()
+writeDataToPipe()
+insert()
+delete()
+update()
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>505</x>
+      <y>205</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*ContentProvider*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>545</x>
+      <y>220</y>
+      <w>54</w>
+      <h>79</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>45;70;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>615</x>
+      <y>200</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*PipeDataWriter&lt;Cursor&gt;*
+--
+writeDataToPipe()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>600</x>
+      <y>215</y>
+      <w>94</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>15;75;85;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>340</x>
+      <y>270</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*UriMatcher*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>410</x>
+      <y>270</y>
+      <w>124</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r2=_sUriMatcher_
+m2=1</panel_attributes>
+    <additional_attributes>115;45;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>190</x>
+      <y>285</y>
+      <w>105</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>- Helps to match URIs 
+  within ContentProviders
+- must be initialized with 
+  matching patterns
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>270</y>
+      <w>69</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;35;60;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>255</x>
+      <y>360</y>
+      <w>125</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>*Smell: unclear responsibility for*
+*    CONTENT_URI format*
+
+- has knowledge of format
+  CONTENT_URI, what is defined
+  in BNotePad
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>315</y>
+      <w>214</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;45;205;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>240</x>
+      <y>425</y>
+      <w>160</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>*sNotesProjectionMap*
+- defines projection for database columns
+  (here, projection is just identity)
+- is used with query() for SQLiteQueryBuilder
+  and allows column names for the 
+  client that are different from columns   
+  in database tables 
+*query()*
+- represent a selection of item set or 
+  single item (depending on the URI)
+- returns a cursor that is notified 
+  on datachanges of the reference item    
+*getType()*
+- extracts the MIME-Type from the URI  
+*getStreamTypes()*
+- overridden from ContentProvider and returns
+  MimeTypes that are supported to saved in files
+*writeDataToPipe()*
+- implements serialization of BNotes
+*insert()*
+- inserts item in NOTES dir (i.e. in database)
+- enriches item with create and modification date if 
+  necessary (but sets default values also for 
+  all other columns)
+- returns URI for added item
+- informs all listener that content has changed
+*delete*
+- delete for a dir or a single item
+- you can pass WHERE-clause in both cases
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>370</x>
+      <y>325</y>
+      <w>164</w>
+      <h>109</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;100;155;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>400</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*DatabaseHelper*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>690</x>
+      <y>285</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*SQLiteOpenHelper*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>595</x>
+      <y>300</y>
+      <w>119</w>
+      <h>109</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>15;100;110;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>455</x>
+      <y>535</y>
+      <w>125</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>- knows how to create database 
+  tables
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>485</x>
+      <y>430</y>
+      <w>74</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;105;65;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>780</x>
+      <y>350</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*SQLiteQueryBuilder*
+--
+- tables:String
+- mProjectionMap:Map</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>690</x>
+      <y>385</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>320</x>
+      <y>80</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>605</x>
+      <y>375</y>
+      <w>94</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>15;55;85;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>720</x>
+      <y>350</y>
+      <w>69</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>15;35;60;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>795</x>
+      <y>260</y>
+      <w>110</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Convenient class to build
+queries to SQLite
+
+*tables*
+- string for "FROM"-clause, 
+  can be  join of tables     
+
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>815</x>
+      <y>300</y>
+      <w>44</w>
+      <h>59</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;50;35;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>785</x>
+      <y>445</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*ClipDescription*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>635</x>
+      <y>425</y>
+      <w>159</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r2=_NOTE_STREAM_TYPES_
+m2=1</panel_attributes>
+    <additional_attributes>15;15;150;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>830</x>
+      <y>390</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*Parcelable*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>830</x>
+      <y>405</y>
+      <w>44</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>15;40;35;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>840</x>
+      <y>500</y>
+      <w>85</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*AssetFileDescriptor*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>875</x>
+      <y>405</y>
+      <w>24</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>15;95;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>710</x>
+      <y>495</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>745</x>
+      <y>490</y>
+      <w>104</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>15;15;95;25</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>605</x>
+      <y>455</y>
+      <w>114</w>
+      <h>59</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>15;15;105;50</additional_attributes>
+  </element>
+</diagram>

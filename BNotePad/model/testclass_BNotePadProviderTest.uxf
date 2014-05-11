@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>50</x>
+      <y>35</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*A*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>20</x>
+      <y>5</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>245</x>
+      <y>175</y>
+      <w>255</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>25</x>
+      <y>55</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>20</x>
+      <y>90</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;15;95;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>110</x>
+      <y>55</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;creates&gt;&gt;
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>265</x>
+      <y>210</y>
+      <w>110</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>*BNotePadProviderTest*
+--
+- insertData()
+testUriAndGetType()
+testQueriesOnNotesUri()
+testQueriesOnNoteIdUri()
+testInserts()
+testDeletes()
+testUpdates()
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>285</x>
+      <y>130</y>
+      <w>140</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*ProviderTestCase2&lt;BNotePadProvider&gt;*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>295</x>
+      <y>150</y>
+      <w>69</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>15;60;60;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>85</x>
+      <y>240</y>
+      <w>90</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>*Uri*
+--
+withAppendedPath()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>225</y>
+      <w>114</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=_INVALID_URI_</panel_attributes>
+    <additional_attributes>105;15;15;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>90</x>
+      <y>190</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*MockContentResolver*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>125</x>
+      <y>280</y>
+      <w>80</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>*SQLiteDatabase*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>165</x>
+      <y>200</y>
+      <w>109</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=mMockResolver</panel_attributes>
+    <additional_attributes>100;30;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>190</x>
+      <y>235</y>
+      <w>84</w>
+      <h>59</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=mDb</panel_attributes>
+    <additional_attributes>75;15;15;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>285</x>
+      <y>275</y>
+      <w>60</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>*NoteInfo*
+--
+title
+note
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>80</x>
+      <y>320</y>
+      <w>150</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>- instance represents one row in database
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>215</x>
+      <y>290</y>
+      <w>79</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;40;70;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>165</x>
+      <y>135</y>
+      <w>129</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1</panel_attributes>
+    <additional_attributes>120;15;15;55</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>410</x>
+      <y>225</y>
+      <w>80</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*BNotePadProvider*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>385</x>
+      <y>150</y>
+      <w>79</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=provider</panel_attributes>
+    <additional_attributes>15;15;70;75</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>555</x>
+      <y>175</y>
+      <w>80</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*DatabaseHelper*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>475</x>
+      <y>180</y>
+      <w>94</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=openHelperForTest</panel_attributes>
+    <additional_attributes>15;60;80;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>590</x>
+      <y>250</y>
+      <w>80</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*SQLiteDatabase*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>575</x>
+      <y>195</y>
+      <w>82</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=1
+r2=writableDatabase</panel_attributes>
+    <additional_attributes>15;15;70;55</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>225</y>
+      <w>84</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=*
+r2=_TEST_NOTES_</panel_attributes>
+    <additional_attributes>45;15;75;60;15;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>75</x>
+      <y>345</y>
+      <w>165</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>*MMockResolver*
+- represents the resolver having our
+  content provider, but all is done
+  in another context - so we do not
+  write during tests in production db
+  even tests are running on production
+  device!
+
+*TEST_NOTES*
+- representation of test data
+*insertData()*
+- method to write test data into database
+*testUriAndGetType()*
+- test method to check mime-type fur different Uris
+*testQueriesOnNotesUri*
+- test answer of content provider for empty
+database and for query on database with
+defined content
+*testQueriesOnNoteIdUri*
+- same as before but just for one item
+*testInserts/Deletes/Updates*
+- checks the corresponding functionality
+on ContentResolver
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>190</x>
+      <y>325</y>
+      <w>89</w>
+      <h>29</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>15;20;80;15</additional_attributes>
+  </element>
+</diagram>
