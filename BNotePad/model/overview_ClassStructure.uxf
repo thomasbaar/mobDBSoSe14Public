@@ -4,8 +4,8 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>50</y>
+      <x>80</x>
+      <y>60</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -16,10 +16,10 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>30</x>
+      <x>20</x>
       <y>0</y>
-      <w>200</w>
-      <h>40</h>
+      <w>210</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>30;30;190;30</additional_attributes>
@@ -27,10 +27,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>570</x>
-      <y>400</y>
-      <w>320</w>
-      <h>280</h>
+      <x>380</x>
+      <y>320</y>
+      <w>400</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>&lt;&lt;system&gt;&gt;</panel_attributes>
     <additional_attributes/>
@@ -38,7 +38,7 @@
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>40</x>
+      <x>30</x>
       <y>100</y>
       <w>140</w>
       <h>70</h>
@@ -50,7 +50,7 @@ bg=yellow</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>30</x>
+      <x>20</x>
       <y>170</y>
       <w>210</w>
       <h>50</h>
@@ -61,7 +61,7 @@ bg=yellow</panel_attributes>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>210</x>
+      <x>200</x>
       <y>100</y>
       <w>100</w>
       <h>30</h>
@@ -73,148 +73,166 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>590</x>
-      <y>450</y>
-      <w>270</w>
-      <h>180</h>
+      <x>530</x>
+      <y>110</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Activity*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>210</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*ListActivity*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>540</x>
+      <y>400</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>*BNoteEditor*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>530</y>
+      <w>140</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>*BNotePad*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>400</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*BNotesList*
 --
-onCreate()
-onResume()
-onPause()
-onSaveInstanceState()
-onCreateOptionsMenu()
-onPrepareOptionsMenu()
 bg=gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>740</x>
-      <y>310</y>
+      <x>670</x>
+      <y>400</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>*Acitivity*
---</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>740</x>
-      <y>310</y>
-      <w>70</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>30;140;50;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>700</x>
-      <y>580</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*LinedEditText*
+    <panel_attributes>*TitleEditor*
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>940</x>
-      <y>440</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*EditText*
---</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>740</x>
-      <y>440</y>
-      <w>230</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>30;140;210;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Note</type>
-    <coordinates>
-      <x>220</x>
-      <y>360</y>
-      <w>280</w>
-      <h>200</h>
-    </coordinates>
-    <panel_attributes>- editor for newly created or existing 
-  items
-- has a flag to distinguish both cases  
-
-*mText*
-- type of this visual element is
-  set in layout file note_editor.xml
-*onCreate*
-- depening on edit/insert-mode extracts
-  the right cursor, initializes layout
-*onResume()*
-- sets title and EditText content
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>400</x>
+      <x>600</x>
       <y>550</y>
-      <w>320</w>
-      <h>60</h>
+      <w>160</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>30;30;300;40</additional_attributes>
+    <panel_attributes>*BNotePadProvider*
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>570</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*BNotes*
+--</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>770</x>
-      <y>510</y>
-      <w>220</w>
-      <h>110</h>
+      <x>440</x>
+      <y>210</y>
+      <w>70</w>
+      <h>210</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
-m2=1
-r2=mText</panel_attributes>
-    <additional_attributes>90;30;200;60;30;90</additional_attributes>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>30;190;50;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>110</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>30;100;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>560</x>
+      <y>110</y>
+      <w>50</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>30;290;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>580</x>
+      <y>110</y>
+      <w>160</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>140;290;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>230</x>
-      <y>580</y>
-      <w>220</w>
-      <h>40</h>
+      <x>170</x>
+      <y>380</y>
+      <w>140</w>
+      <h>70</h>
     </coordinates>
-    <panel_attributes>Draws lines between textlines
+    <panel_attributes>Main Acitivity
+(launched activity)
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>470</x>
-      <y>470</y>
-      <w>140</w>
+      <x>280</x>
+      <y>380</y>
+      <w>160</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>30;30;120;30</additional_attributes>
+    <additional_attributes>30;30;140;30</additional_attributes>
   </element>
 </diagram>

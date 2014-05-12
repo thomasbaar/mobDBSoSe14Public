@@ -1,4 +1,4 @@
-This project resembles the Notepad-Tutorial of Google, but has been simplified.
+This project resembles the Notepad-tutorial of Google, but has been simplified.
 The main changes are:
 
 - Note has been renamed to BNote
@@ -10,6 +10,7 @@ The main changes are:
 Bugs:
 - no idea how paste-functionality is supposed to work
 - edit-title cannot be invoked any longer
+- still contains deprecated methods as the original Notepad-tutorial
 
 
 
