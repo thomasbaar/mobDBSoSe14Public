@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">PersonDB</string>
+  
+  <string name="addFirstnameHint">Firstname</string>
+  <string name="addFirstnameContentDescription">Insert Firstname</string>
+  <string name="addLastnameHint">Lastname</string>
+  <string name="addLastnameContentDescription">Insert Lastname</string>
+  <string name="addEmailHint">Email</string>
+  <string name="addEmailContentDescription">Insert Email</string>
+  
+  <string name="buttonSaveLabel">Save</string>
+  <string name="buttonCancelLabel">Clear</string>
+  <string name="buttonPrevLabel">Prev</string>
+  <string name="buttonDeleteAllLabel">DeleteAll</string>
+  <string name="buttonNextLabel">Next</string>
+  
+     <string name="action_settings">Settings</string>
+  
+</resources>

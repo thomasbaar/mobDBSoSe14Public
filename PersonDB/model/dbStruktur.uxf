@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>230</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>person</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>260</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>__id_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>260</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>firstname</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>260</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lastname</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>470</x>
+      <y>260</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>email</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>220</x>
+      <y>90</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Datenbank-Tabellen, wie sie von 
+SQLite angelegt werden
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
