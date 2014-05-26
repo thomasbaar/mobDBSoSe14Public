@@ -22,7 +22,7 @@ public class PersonDBFacade {
 	
 	// some bookkeeping information on the database
 	static final String DATABASE_FILE_NAME = "persondb";
-	static final int DATABASE_VERSION = 6;
+	static final int DATABASE_VERSION = 8;
 	
 
 

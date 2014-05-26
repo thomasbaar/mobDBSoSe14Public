@@ -33,7 +33,7 @@
       <w>130</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>created
+    <panel_attributes>*created*
 --
 entry:onCreate()
 </panel_attributes>
@@ -58,23 +58,23 @@ entry:onCreate()
       <w>130</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>updated
+    <panel_attributes>*upgraded*
 --
-entry: onUpdate()
+entry: onUpgrade()
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
+      <x>290</x>
       <y>300</y>
-      <w>90</w>
+      <w>108</w>
       <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-update</panel_attributes>
-    <additional_attributes>50;150;50;30</additional_attributes>
+upgrade</panel_attributes>
+    <additional_attributes>60;150;60;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -86,7 +86,7 @@ update</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-
  
-update</panel_attributes>
+upgrade</panel_attributes>
     <additional_attributes>100;30;120;90;30;90;60;30</additional_attributes>
   </element>
   <element>
@@ -121,7 +121,7 @@ bg=yellow</panel_attributes>
       <w>330</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>*Ereignis update*
+    <panel_attributes>*Ereignis upgrade*
 - Konstruktor SQLiteOpenHelper wird mit höherer 
   Versionsnummer als bisher aufgerufen
 bg=yellow</panel_attributes>
@@ -146,7 +146,7 @@ bg=yellow</panel_attributes>
       <w>330</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>*Aktionen onCreate(), onUpdate()*
+    <panel_attributes>*Aktionen onCreate(), onUpgrade()*
 - sind in SQLiteOpenHelper deklariert und 
   können in Unterklassen überschrieben werden
 bg=yellow</panel_attributes>

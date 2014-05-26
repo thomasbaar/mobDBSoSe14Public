@@ -12,7 +12,7 @@
     <panel_attributes>*PersonDBOpenHelper*
 --
 onCreate(...)
-onUpdate(...)</panel_attributes>
+onUpgrade(...)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -40,7 +40,7 @@ name //db-name
 version  // db-version
 --
 onCreate(...)
-onUpdate(...)</panel_attributes>
+onUpgrade(...)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -65,7 +65,7 @@ onUpdate(...)</panel_attributes>
     <panel_attributes>*PersonTable*
 --
 onCreate(...)
-onUpdate(...)</panel_attributes>
+onUpgrade(...)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
