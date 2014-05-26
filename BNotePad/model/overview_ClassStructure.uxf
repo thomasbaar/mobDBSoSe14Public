@@ -4,7 +4,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>80</x>
+      <x>60</x>
       <y>60</y>
       <w>100</w>
       <h>30</h>
@@ -16,7 +16,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>20</x>
+      <x>0</x>
       <y>0</y>
       <w>210</w>
       <h>50</h>
@@ -27,7 +27,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>380</x>
+      <x>360</x>
       <y>320</y>
       <w>400</w>
       <h>360</h>
@@ -38,7 +38,7 @@
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>30</x>
+      <x>10</x>
       <y>100</y>
       <w>140</w>
       <h>70</h>
@@ -50,7 +50,7 @@ bg=yellow</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>20</x>
+      <x>0</x>
       <y>170</y>
       <w>210</w>
       <h>50</h>
@@ -61,7 +61,7 @@ bg=yellow</panel_attributes>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>200</x>
+      <x>180</x>
       <y>100</y>
       <w>100</w>
       <h>30</h>
@@ -73,7 +73,7 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>530</x>
+      <x>510</x>
       <y>110</y>
       <w>100</w>
       <h>30</h>
@@ -85,7 +85,7 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>450</x>
+      <x>430</x>
       <y>210</y>
       <w>100</w>
       <h>30</h>
@@ -97,7 +97,7 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>540</x>
+      <x>520</x>
       <y>400</y>
       <w>100</w>
       <h>30</h>
@@ -109,7 +109,7 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>400</x>
+      <x>380</x>
       <y>530</y>
       <w>140</w>
       <h>130</h>
@@ -121,7 +121,7 @@ bg=magenta</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>420</x>
+      <x>400</x>
       <y>400</y>
       <w>100</w>
       <h>30</h>
@@ -134,7 +134,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>670</x>
+      <x>650</x>
       <y>400</y>
       <w>100</w>
       <h>30</h>
@@ -146,7 +146,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>600</x>
+      <x>580</x>
       <y>550</y>
       <w>160</w>
       <h>30</h>
@@ -158,7 +158,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>420</x>
+      <x>400</x>
       <y>570</y>
       <w>100</w>
       <h>30</h>
@@ -170,7 +170,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>440</x>
+      <x>420</x>
       <y>210</y>
       <w>70</w>
       <h>210</h>
@@ -181,7 +181,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>480</x>
+      <x>460</x>
       <y>110</y>
       <w>100</w>
       <h>120</h>
@@ -192,7 +192,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>560</x>
+      <x>540</x>
       <y>110</y>
       <w>50</w>
       <h>310</h>
@@ -203,7 +203,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>580</x>
+      <x>560</x>
       <y>110</y>
       <w>160</w>
       <h>310</h>
@@ -214,7 +214,7 @@ bg=gray</panel_attributes>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>170</x>
+      <x>150</x>
       <y>380</y>
       <w>140</w>
       <h>70</h>
@@ -227,7 +227,7 @@ bg=yellow</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>280</x>
+      <x>260</x>
       <y>380</y>
       <w>160</w>
       <h>50</h>

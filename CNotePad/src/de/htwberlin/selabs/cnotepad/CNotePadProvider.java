@@ -182,7 +182,7 @@ public class CNotePadProvider extends ContentProvider {
         // Maps "title" to "title"
         sNotesProjectionMap.put(CNotePad.CNotes.COLUMN_NAME_TITLE, CNotePad.CNotes.COLUMN_NAME_TITLE);
 
-        // Maps "note" to "note"
+        // Maps "content" to "content"
         sNotesProjectionMap.put(CNotePad.CNotes.COLUMN_NAME_CONTENT, CNotePad.CNotes.COLUMN_NAME_CONTENT);
 
         // Maps "created" to "created"

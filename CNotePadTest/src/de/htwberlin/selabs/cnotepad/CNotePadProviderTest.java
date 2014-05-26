@@ -16,23 +16,16 @@
 
 package de.htwberlin.selabs.cnotepad;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 import android.content.ContentUris;
 import android.content.ContentValues;
-import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.os.ParcelFileDescriptor;
 import android.test.ProviderTestCase2;
 import android.test.mock.MockContentResolver;
-
-import java.io.BufferedReader;
-import java.io.FileDescriptor;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 /*
  */
